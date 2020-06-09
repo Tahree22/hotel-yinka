@@ -1,0 +1,226 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.contact-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-title h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 10px;
+  color: #333333;
+}
+.contact-title p {
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 180%;
+}
+.picture {
+  width: 300px;
+  height: 232.2px;
+}
+.contact-form {
+  display: absolute;
+  background-color: #c1a87d;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 35px 0;
+}
+/* .contact-info {
+  margin-left: 90px;
+  margin-bottom: 30px;
+} */
+.contact-info-content {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+#info-title {
+  /* padding-top: 100px;
+  margin-bottom: 40px; */
+  text-align: center;
+  font-weight: 600;
+  font-size: 23px;
+  color: #fff;
+}
+.info {
+  /* display: inline-block; */
+  font-size: 16px;
+  margin-left: 15px;
+  font-weight: normal;
+  color: #fff;
+  /* text-align: center; */
+}
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+.social-icons img {
+  /* justify-content: center; */
+  padding: 20px 0px 10px;
+  /* margin-left: 90px; */
+}
+/*
+.faqbox{
+    display: flex;
+    flex-direction: column;
+    width: 1046px;
+    height: 700px;
+    justify-content: center;
+    align-self: center;
+}*/
+
+/* .faq {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+} */
+h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  color: black;
+  margin-bottom: 40px;
+}
+.accordion a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* width: 90%; */
+  padding: 1rem 3rem 1rem 1rem;
+  font-size: 23px;
+  font-weight: normal;
+  color: black;
+  border-bottom: 1px solid #eeeeee;
+  text-decoration: none;
+}
+.accordion a.active {
+  border-bottom: 1px solid #ddd;
+}
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: #03b5d2;
+}
+.accordion a::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f078";
+  font-weight: 900;
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #000000;
+}
+.accordion a.active::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f077";
+  font-weight: 900;
+  color: #000000;
+}
+/* Accordion Content */
+.accordion .content p {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.accordion .content {
+  opacity: 0;
+  max-height: 0;
+  padding: 0 1rem;
+  border-bottom: 1px solid #eeeeee;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.accordion .content.active {
+  opacity: 1;
+  max-height: 100%;
+}
+
+::-webkit-details-marker {
+  float: right;
+}
+details {
+  border-bottom: 1px solid #eeeeee;
+  contain: content;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  position: relative;
+}
+.sendmessage {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sendmessage form {
+  display: flex;
+  flex-direction: column;
+  height: 275px;
+  width: 100%;
+  justify-content: space-between;
+}
+.form input {
+  height: 35px;
+  border: none;
+  border-bottom: 1px solid #333333;
+  padding: 5px 0;
+}
+
+form .submit {
+  width: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  align-self: center;
+  cursor: pointer;
+  background: #c1a87d;
+  border-radius: 20px;
+  padding: 16px 40px;
+  color: white;
+  border-bottom: unset;
+}
+
+@media screen and (min-width: 600px) {
+  .contact-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0;
+    border: 1px solid #eeeeee;
+    padding: 30px;
+    border-radius: 20px;
+  }
+  .faq {
+    padding: 20px;
+    margin: 50px 0;
+  }
+  .contact-form {
+    margin: unset;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .contact-div,
+  .faq {
+    width: 600px;
+    position: relative;
+    padding: 30px;
+    left: calc(50% - 330px);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .contact-form {
+    position: relative;
+    left: -30%;
+  }
+}
